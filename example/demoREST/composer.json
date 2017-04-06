@@ -1,0 +1,23 @@
+{
+    "name": "abdel/demoREST",
+    "description": "",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdel Bolanos Martinez",
+            "email": "abdel.bolanos@gmail.com"
+        }
+    ],
+    "require": {
+        "abdel/simple-rest-api": "1.0.0"
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Foo\\": "src/modules/Foo",
+            "FooHtml\\": "src/modules/FooHtml"
+        }
+    }
+}

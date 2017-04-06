@@ -1,0 +1,21 @@
+{
+    "name": "abdel/simple-rest-api",
+    "description": "Pure PHP 7 rest api to create modules that respond to REST requests.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Abdel Bolanos Martinez",
+            "email": "abdel.bolanos@gmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "repositories": [
+        {
+            "type": "git",
+            "url": "https://github.com/abdelbolanos/simple-php-rest-api",
+            "reference": "master"
+        }
+    ],
+    "require": {}
+}

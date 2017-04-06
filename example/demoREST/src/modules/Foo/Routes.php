@@ -8,7 +8,7 @@ class Routes extends BaseRoutes
 {
     protected static $routes = [
         [
-            'route' => '^/foo/(?P<name>[A-Za-z]+)$',
+            'route' => '^/foo/(?P<id>[1-9\.]+)$',
             'controller' => FooController::class,
             'action' => 'getFoo',
             'method' => 'GET',

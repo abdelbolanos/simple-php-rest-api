@@ -5,5 +5,5 @@ interface BaseModelInterface
 {
     public static function create();
 
-    public static function get($name);
+    public function render();
 }

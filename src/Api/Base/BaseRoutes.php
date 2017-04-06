@@ -1,5 +1,5 @@
 <?php
-namespace Api;
+namespace Api\Base;
 
 use \Api\Interfaces\BaseRoutesInterface as BaseRoutesInterface;
 
