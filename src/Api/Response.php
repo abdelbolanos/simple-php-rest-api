@@ -29,6 +29,10 @@ class Response
                     print $responseData['data'];
                 }
                 break;
+            case 'Atom':
+                header('Content-Type: text/xml');
+                print $responseData['data'];
+                break;
             
             default:
                 # default is JSON
