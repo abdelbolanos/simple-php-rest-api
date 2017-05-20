@@ -12,7 +12,7 @@ class Router
     private function __construct()
     {
         $this->stringRoute = (isset($_GET[ROUTE_PARAM])) ? $_GET[ROUTE_PARAM] : false;
-        $this->request = new Request($_GET, $_POST, $_SERVER['REQUEST_METHOD']);
+        $this->request = new Request($_GET, $_POST, $_SERVER['REQUEST_METHOD'], file_get_contents('php://input'));
         $this->route = $this->findRoute();
     }
 
@@ -84,6 +84,7 @@ class Router
                         'ErrorTrace' => $e->getTraceAsString(),
                     ]
                 );
+                error_log(print_r($responseData, true));
             }
         } else if ($this->stringRoute === false) {
             $responseData = Response::responseError(sprintf("Route Param '%s' not required in index.php: ", ROUTE_PARAM));
