@@ -7,12 +7,14 @@ class Request
     public $post = array();
     public $method = '';
     public $groupParams = array();
+    public $rawPostData = array();
 
-    public function __construct($get, $post, $method)
+    public function __construct($get, $post, $method, $rawPostData)
     {
         $this->get = $get;
         $this->post = $post;
         $this->method = $method;
+        $this->rawPostData = $rawPostData;
     }
 
     public function setGroupParams($arrayMatch)
